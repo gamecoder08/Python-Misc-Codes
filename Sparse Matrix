@@ -1,0 +1,35 @@
+#code to find whether a matrix is sparse matrix or not.
+#a sparse matrix is a matrix which has majority of its elements as zero.
+p=int(input("Enter number of rows = "))
+q=int(input("Enter number of columns = "))
+nz=z=0
+arr=[]
+print("Enter values of array: ")
+for i in range(0,p):
+    arri=[]
+    for j in range(0,q):
+        a=int(input())
+        arri.append(a)
+    arr.append(arri)
+for i in range(0,p):
+    for j in range(0,q):
+        if arr[i][j]==0:
+            z=z+1
+        else:
+            nz=nz+1
+if z>nz:
+    print("Matrix is sparse matrix \n")
+else:
+    print("Matrix is not a sparse matrix \n")
+print("\n")
+print("The Matrix: \n")
+for i in range(0,p):
+    for j in range(0,q):
+        print(arr[i][j],end="\t")
+    print("\n")
+print("\n")
+print("Rows \t","Columns \t","Values \t","\n")
+for i in range(0,p):
+    for j in range(0,q):
+        if arr!=0:
+            print(i,"\t",j,"\t \t",arr[i][j],"\n")
