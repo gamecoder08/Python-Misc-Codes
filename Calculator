@@ -1,0 +1,35 @@
+#A calculator to do basic maths between two numbers
+from ast import Break, Continue
+import math
+while 0<5:
+    print("\t \t CALCULATOR")
+    a=int(input("Enter First Number = "))
+    print(" Choose the Operation: \n")
+    print("1. Addition \n2. Subtraction \n3. Multiplication \n4. Division \n5. Squareroot \n6. Power")
+    b=int(input("Enter  Corresponding number of operation: "))
+    if b==1:
+        c=int(input("Enter Second Number = "))
+        s=a+c
+    elif b==2:
+        c=int(input("Enter Second Number = "))
+        s=a-c
+    elif b==3:
+        c=int(input("Enter Second Number = "))
+        s=a*c
+    elif b==4:
+        c=int(input("Enter Second Number = "))
+        s=a/c
+    elif b==5:
+        s=math.sqrt(a)
+    elif b==6:
+        c=int(input("Enter Power = "))
+        s=math.pow(a,c)
+    print("Your Answer = ",s )
+    print("\n \n Do You Want to do another calculation?")
+    z=input("\n Yes or No? \n Choice = ")
+    if z=="No" or z=="no":
+        Break
+    elif z=="Yes" or z=="yes":
+        Continue
+    else:
+        print(" Action not understood")
